@@ -118,7 +118,7 @@ sh vpnsetup.sh
 ```
 **注：** 如果无法通过 `wget` 下载，你也可以打开 <a href="vpnsetup.sh" target="_blank">vpnsetup.sh</a> (或者 <a href="vpnsetup_centos.sh" target="_blank">vpnsetup_centos.sh</a>)，然后点击右方的 **`Raw`** 按钮。按快捷键 `Ctrl-A` 全选， `Ctrl-C` 复制，然后粘贴到你喜欢的编辑器。
 
-##修改密码：
+## 修改密码：
 vim /etc/ppp/chap-secrets
 用户名  协议 密码
 
