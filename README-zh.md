@@ -116,8 +116,18 @@ VPN_USER='你的VPN用户名' \
 VPN_PASSWORD='你的VPN密码' \
 sh vpnsetup.sh
 ```
-
 **注：** 如果无法通过 `wget` 下载，你也可以打开 <a href="vpnsetup.sh" target="_blank">vpnsetup.sh</a> (或者 <a href="vpnsetup_centos.sh" target="_blank">vpnsetup_centos.sh</a>)，然后点击右方的 **`Raw`** 按钮。按快捷键 `Ctrl-A` 全选， `Ctrl-C` 复制，然后粘贴到你喜欢的编辑器。
+
+##修改密码：
+vim /etc/ppp/chap-secrets
+用户名  协议 密码
+
+vim /etc/ipsec.secrets
+%any  %any  : PSK "修改这里（预共享密钥）"
+
+service ipsec restart
+serviec l2tpd restart
+
 
 ### CentOS & RHEL
 
