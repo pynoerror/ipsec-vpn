@@ -129,7 +129,7 @@ vim /etc/ipsec.secrets
 
 service ipsec restart
 
-service l2tpd restart
+service xl2tpd restart
 
 
 ### CentOS & RHEL
