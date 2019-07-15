@@ -120,13 +120,16 @@ sh vpnsetup.sh
 
 ## 修改密码：
 vim /etc/ppp/chap-secrets
+
 用户名  协议 密码
 
 vim /etc/ipsec.secrets
+
 %any  %any  : PSK "修改这里（预共享密钥）"
 
 service ipsec restart
-serviec l2tpd restart
+
+service l2tpd restart
 
 
 ### CentOS & RHEL
